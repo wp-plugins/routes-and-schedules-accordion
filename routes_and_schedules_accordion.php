@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Routes and Schedules Accordion
-Version: 2013.01.20
+Version: 2013.01.23
 Author: Drew Carey Buglione
 License: GPLv2 or later
 */
