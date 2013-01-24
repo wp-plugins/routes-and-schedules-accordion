@@ -10,6 +10,7 @@ Lets transit agencies add a dynamically-created jQuery accordion for their route
 
 == Installation ==
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
+1. Upload the `routes-and-schedules-accordion` directory to `/wp-content/plugins/routes-and-schedules-accordion/`
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Place the `[routes_and_schedules_accordion]` shortcode in your page(s) or post(s)
+3. Configure the plugin through the 'Settings' menu in WordPress
+4. Place the `[routes_and_schedules_accordion]` shortcode in your page(s) or post(s)
