@@ -38,11 +38,9 @@
     font-size: 12px !important;
     line-height: 1.6 !important;
 }
-
 .routes-and-schedules-accordion-title:hover {
   background: #E6E6E6 !important;
 }
-
 .routes-and-schedules-accordion-title:after {
     content: "" !important;
     display: block !important;

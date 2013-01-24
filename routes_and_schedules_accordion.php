@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Routes and Schedules Accordion
-Version: 2013.01.23
+Version: 2013.01.24
 Author: Drew Carey Buglione
 License: GPLv2 or later
 */
@@ -267,7 +267,7 @@ class Routes_and_Schedules_Accordion
 		?>
 		<ul class="routes-and-schedules-accordion">
 		<?php for ($i=1; $i<=$this->options['number_of_routes']; $i++)
-		{if (($this->options[$i.'_route_name'] != '') and ($this->options[$i.'_route_service_area'] != '') and ($this->options[$i.'_route_current_schedule_pdf_url'] != '') and ($this->options[$i.'_route_current_schedule_effective_date'] != '') and ($this->options[$i.'_route_google_map_msid'] != '') and ($this->options[$i.'_route_google_map_dimensions'] != '') and ($this->options[$i.'_route_google_map_api_string'] != '')){?>
+		{if (($this->options[$i.'_route_name'] != '') and ($this->options[$i.'_route_service_area'] != '') and ($this->options[$i.'_route_current_schedule_pdf_url'] != '') and ($this->options[$i.'_route_current_schedule_effective_date'] != '')){?>
 			<li class="routes-and-schedules-accordion-li">
 				<div class="routes-and-schedules-accordion-title">
 					<h5 class="routes-and-schedules-accordion-route-name"><?php echo $this->options[$i.'_route_name'] ?></h5>
@@ -278,8 +278,11 @@ class Routes_and_Schedules_Accordion
 					<?php if (($this->options[$i.'_route_upcoming_schedule_pdf_url'] != '') and ($this->options[$i.'_route_upcoming_schedule_effective_date'] != ''))
 					{?>
 					<a class="routes-and-schedules-accordion-pdf-link" href="<?php echo $this->options[$i.'_route_upcoming_schedule_pdf_url'] ?>">Upcoming Schedule <span>(Effective: <?php echo $this->options[$i.'_route_upcoming_schedule_effective_date'] ?>)</span></a><br><br>
-					<?php } ?>
+					<?php }?>
+					<?php if (($this->options[$i.'_route_google_map_msid'] != '') and ($this->options[$i.'_route_google_map_dimensions'] != '') and ($this->options[$i.'_route_google_map_dimensions'] != '_route_google_map_api_string'))
+					{?>
 					<a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=<?php echo $this->options[$i.'_route_google_map_msid'] ?>"><img class="routes-and-schedules-accordion-map-img" src="http://maps.google.com/maps/api/staticmap?size=<?php echo $this->options[$i.'_route_google_map_dimensions'] ?><?php echo $this->options[$i.'_route_google_map_api_string'] ?>&sensor=false<?php if ($this->options['google_maps_api_key'] != ''){echo '&key='.$this->options['google_maps_api_key'];} ?>"></a>
+					<?php }?>
 				</div>
 			</li>
 		<?php }} ?>
