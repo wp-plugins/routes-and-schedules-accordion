@@ -68,6 +68,7 @@
 .routes-and-schedules-accordion-map-img {
     padding: 4px !important;
     line-height: 20px !important;
+    max-width: 100% !important;
     border: 1px solid #ddd !important;
     -webkit-border-radius: 4px !important;
     -moz-border-radius: 4px !important;
