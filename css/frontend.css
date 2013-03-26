@@ -59,8 +59,10 @@
     line-height: 22px !important;
 }
 .routes-and-schedules-accordion-pdf-link {
-    color: #2ba6cb !important;
-    text-decoration: none !important;
+    color: red !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
     padding-right: 18px !important;
     background: transparent url(../img/pdf.gif) no-repeat center right !important;
 }

@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Routes and Schedules Accordion
-Version: 2013.01.24.1
+Version: 1.1
 Author: Drew Carey Buglione
 License: GPLv2 or later
 */
@@ -274,7 +274,7 @@ class Routes_and_Schedules_Accordion
 					<span class="routes-and-schedules-accordion-route-service-area"><b>Serving:</b> <?php echo $this->options[$i.'_route_service_area'] ?></span>
 				</div>
 				<div class="routes-and-schedules-accordion-content">
-					<a class="routes-and-schedules-accordion-pdf-link" href="<?php echo $this->options[$i.'_route_current_schedule_pdf_url'] ?>">Current Schedule <span>(Effective: <?php echo $this->options[$i.'_route_current_schedule_effective_date'] ?>)</span></a><br><br>
+					<a class="routes-and-schedules-accordion-pdf-link" href="<?php echo $this->options[$i.'_route_current_schedule_pdf_url'] ?>">Current Schedule PDF<span>(Effective: <?php echo $this->options[$i.'_route_current_schedule_effective_date'] ?>)</span></a><br><br>
 					<?php if (($this->options[$i.'_route_upcoming_schedule_pdf_url'] != '') and ($this->options[$i.'_route_upcoming_schedule_effective_date'] != ''))
 					{?>
 					<a class="routes-and-schedules-accordion-pdf-link" href="<?php echo $this->options[$i.'_route_upcoming_schedule_pdf_url'] ?>">Upcoming Schedule <span>(Effective: <?php echo $this->options[$i.'_route_upcoming_schedule_effective_date'] ?>)</span></a><br><br>
